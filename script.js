@@ -6,6 +6,8 @@ function volume_sphere(event) {
   if (radius >= 0) {
     let vol = (4 / 3) * Math.PI * Math.pow(radius, 3);
     volume.value = vol.toFixed(4);
+  }else{
+	  volume.value = `NaN`
   }
 }
 
